@@ -17,9 +17,6 @@ This project aims to develop a machine learning model to predict the Click-Throu
 ---
 
 ## 3. Methodology
-
-The project follows a standard machine learning workflow:
-
 1.  **Exploratory Data Analysis (EDA):**
     * Analyzed feature distributions and checked for missing values.
     * Visualized relationships between key features and the `is_clicked` target variable.
@@ -47,8 +44,7 @@ The project follows a standard machine learning workflow:
 ```bash
 ├── data/
 │   └── ad_10000records.csv         
-├── notebooks/
-│   └── EDA.ipynb        
+├── EDA.ipynb        
 ├── train_model.py     
 ├── requirements.txt
 └── README.md
@@ -57,11 +53,12 @@ The project follows a standard machine learning workflow:
 
 ## 5. Setup & Usage
 Python 12.8
+
 **Instructions:**
 
 1.  **Clone the repository:**
     ```bash
-    git clone [Your-Repo-Link]
+    git clone https://github.com/AlexBrakas/Ad-Click-Through-Rate-Prediction
     ```
 
 2.  **Create a virtual environment (recommended):**
@@ -76,18 +73,16 @@ Python 12.8
     ```
 
 4.  **Run the training script:**
-    * Place your Kaggle CSV file inside the `data/` directory.
-    * Update the file path in `scripts/train_model.py`.
+    * Place your Kaggle CSV file inside a `data/` directory.
+    * Update the file path in `train_model.py`.
     * Run the script from the root directory:
     ```bash
-    python scripts/train_model.py
+    python train_model.py
     ```
 
 ---
 
 ## 6. Results
-
-*(You will fill this section in after running your model)*
 
 The final XGBoost model achieved the following performance on the test set:
 * **AUC-ROC Score:** 0.9407
