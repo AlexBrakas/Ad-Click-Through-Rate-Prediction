@@ -62,6 +62,7 @@ Python 12.8
     ```
 
 2.  **Create a virtual environment:**
+2.  **Create a virtual environment:**
     ```bash
     python -m venv venv
     source `venv\Scripts\activate`
@@ -92,6 +93,8 @@ The final XGBoost model achieved the following performance on the test set:
 
 ## 7. Future Work
 
+* Perform extensive hyperparameter tuning using GridSearch.
+* Experiment with other gradient boosting models.
 * Perform extensive hyperparameter tuning using GridSearch.
 * Experiment with other gradient boosting models.
 * Develop more sophisticated features from user interaction history or timestamps.
